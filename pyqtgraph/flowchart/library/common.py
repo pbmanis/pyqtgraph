@@ -47,7 +47,7 @@ def generateUi(opts):
             if 'min' in o:
                 w.setMinimum(int(o['min']))
             if 'value' in o:
-                w.setValueint(int(o['value']))
+                w.setValue(int(o['value']))
         elif t == 'doubleSpin':
             w = QtWidgets.QDoubleSpinBox()
             if 'max' in o:
