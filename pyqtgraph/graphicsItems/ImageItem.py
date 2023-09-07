@@ -397,7 +397,7 @@ class ImageItem(GraphicsObject):
             if processingSubstrateChanged:
                 self._processingBuffer = None
             shapeChanged = (processingSubstrateChanged or self.image is None or image.shape != self.image.shape)
-            image = image.view(typ=numpy.ndarray)
+            image = image.view(numpy.ndarray)
             if self.image is None or image.dtype != self.image.dtype:
                 self._effectiveLut = None
             self.image = image
